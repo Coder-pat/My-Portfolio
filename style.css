@@ -344,13 +344,14 @@ footer a {
 @media (max-width: 768px) {
   .navbar {
     position: absolute;
-    top: 100%;
+    top: 200px;
     left: 0;
     background: black;
     width: 100%;
     flex-direction: column;
     align-items: center;
     display: none; /* Hidden by default */
+    z-index: 99;
   }
 
   .navbar.active {
@@ -359,9 +360,11 @@ footer a {
 
   .menu-icon {
     display: block;
+    z-index: 100;
   }
 
   .home {
+    margin-top: 450px;
     flex-direction: column;
     align-items: center;
     gap: 2em;
@@ -422,11 +425,29 @@ footer a {
     padding: 20px;
   }
 
+  .home {
+    margin-top: 120px;
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+  }
+
   .navbar {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    background: black;
+    align-items: center;
+    display: none; /* Hidden by default */
+    z-index: 99;
   }
 
   navbar a:active {
@@ -439,11 +460,11 @@ footer a {
     text-align: center;
   }
 
-  .home {
-    margin-top: 60px;
+  .home-content {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 200px;
   }
 
   .home-content h1 {
@@ -486,10 +507,5 @@ footer a {
   footer {
     height: auto;
     padding: 2em 0;
-  }
-
-  .links {
-    display: flex;
-    flex-direction: column;
   }
 }

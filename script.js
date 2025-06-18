@@ -1,8 +1,7 @@
-<script>
   const menuIcon = document.getElementById("menu-icon");
   const navbar = document.querySelector(".navbar");
 
-  menuIcon.addEventListener("click", () ={">"} {
-    navbar.classList.toggle("active")};
-  {"}"});
-</script>
+  menuIcon.addEventListener("click", function () {
+    navbar.classList.toggle("active");
+  });
+
