@@ -325,3 +325,128 @@ footer a {
   margin: 1rem 0;
   resize: none;
 }
+
+/* ------------------ Base Styles (Already Provided) ------------------ */
+
+/* Existing CSS code here... */
+
+/* ------------------ Responsive Media Queries ------------------ */
+
+/* Tablet Screens (768px and below) */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 20px;
+  }
+
+  .home-content h1 {
+    font-size: 40px;
+  }
+
+  .home-content h3 {
+    font-size: 30px;
+  }
+
+  .btn-box {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .img-box,
+  .myself {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .navbar a {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+
+  .d-images,
+  .i-images,
+  .w-vids {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .g-d,
+  .i-l,
+  .w-b {
+    width: 90%;
+  }
+
+  .list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .contact {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: 28px;
+  }
+
+  .home-content h3 {
+    font-size: 24px;
+  }
+
+  .myself {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .btn-box button {
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .app-name {
+    display: none;
+  }
+
+  .contact-form h2 {
+    font-size: 28px;
+  }
+
+  .contact-form form {
+    width: 90%;
+  }
+
+  .input-box {
+    flex-direction: column;
+  }
+
+  footer {
+    height: auto;
+    padding: 2em 0;
+  }
+}
