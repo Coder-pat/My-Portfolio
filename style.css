@@ -244,6 +244,13 @@ nav.navbar a:hover {
   margin-top: 50px;
 }
 
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
 .w-b {
   width: 30%;
   height: auto;
@@ -333,7 +340,27 @@ footer a {
 /* ------------------ Responsive Media Queries ------------------ */
 
 /* Tablet Screens (768px and below) */
+
 @media (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: black;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none; /* Hidden by default */
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
   .home {
     flex-direction: column;
     align-items: center;
