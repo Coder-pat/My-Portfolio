@@ -514,3 +514,19 @@ footer a {
     padding: 2em 0;
   }
 }
+
+@media print {
+  * {
+    visibility: visible !important;
+    display: block !important;
+  }
+
+  body {
+    background: white !important;
+  }
+
+  header,
+  footer {
+    position: relative !important;
+  }
+}
