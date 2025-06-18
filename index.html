@@ -18,19 +18,19 @@
   </head>
   <body>
     <header class="header">
-      <a href="#" class="logo">TrishMensah</a>
+      <a href="#home" class="logo">TrishMensah</a>
 
       <nav class="navbar">
-        <a href="#" class="active">Home</a>
-        <a href="#">Graphic Design</a>
-        <a href="#">Illustration</a>
-        <a href="#">Projects</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#design">Graphic Design</a>
+        <a href="#ill">Illustration</a>
+        <a href="#website">Websites</a>
       </nav>
 
-      <a href="#" class="contact">Contact Me</a>
+      <a href="#contact" class="contact">Contact Me</a>
     </header>
 
-    <section class="home">
+    <section class="home" id="home">
       <div class="home-content">
         <h3>Hi,</h3>
         <h1>
@@ -56,7 +56,7 @@
     </section>
 
     <section class="portfolio">
-      <div class="design">
+      <div class="design" id="design">
         <h2 class="h-g">MY GRAPHIC DESIGN WORKS</h2>
         <div class="d-images">
           <div class="g-d">
@@ -70,7 +70,7 @@
           </div>
         </div>
       </div>
-      <div class="ill">
+      <div class="ill" id="ill">
         <h2 class="h-i">MY ILLUSTRATION WORKS</h2>
         <div class="i-images">
           <div class="i-l">
@@ -84,6 +84,53 @@
           </div>
         </div>
       </div>
+      <div class="website" id="website">
+        <h2 class="h-w">MY WEBSITES</h2>
+        <div class="w-vids">
+          <div class="w-b">
+            <img src="/business.png" alt="logo" />
+          </div>
+          <div class="w-b">
+            <img src="/trend.png" alt="logo" />
+          </div>
+          <div class="w-b">
+            <img src="/product.png" alt="nike poster" />
+          </div>
+        </div>
+      </div>
+      <div class="contact-form" id="contact">
+        <h2 class="h-c">CONTACT</h2>
+        <form action="mailto:ensign224@gmail.com">
+          <div class="input-box">
+            <input type="text" placeholder="Full Name" />
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="input-box">
+            <input type="number" placeholder="Phone" />
+            <input type="text" placeholder="Subject" />
+          </div>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+          ></textarea>
+          <input type="submit" value="Send Message" class="btn-1" />
+        </form>
+      </div>
     </section>
+
+    <footer>
+      <a href="#home" class="logo">TrishMensah</a>
+      <div class="links">
+        <ul class="list">
+          <li><a href="#design">Graphic Design</a></li>
+          <li><a href="#ill">Illustration</a></li>
+          <li><a href="#website">Websites</a></li>
+        </ul>
+      </div>
+      <p class="copyright">&copy; 2025 TrishMensah | All Rights Reserved</p>
+    </footer>
   </body>
 </html>
