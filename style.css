@@ -344,9 +344,9 @@ footer a {
 @media (max-width: 768px) {
   .navbar {
     position: absolute;
-    top: 200px;
+    top: 120px;
     left: 0;
-    background: black;
+    background: rgba(0, 0, 0, 0.9);
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -364,7 +364,6 @@ footer a {
   }
 
   .home {
-    margin-top: 450px;
     flex-direction: column;
     align-items: center;
     gap: 2em;
@@ -425,8 +424,13 @@ footer a {
     padding: 20px;
   }
 
+  .img-box,
+  .myself {
+    display: none;
+  }
+
   .home {
-    margin-top: 120px;
+    padding-top: 200px;
     width: 100%;
     min-height: 100vh;
     background: rgb(241, 241, 241);
@@ -442,9 +446,9 @@ footer a {
     gap: 10px;
     width: 100%;
     position: absolute;
-    top: 200px;
+    top: 180px;
     left: 0;
-    background: black;
+    background: rgba(0, 0, 0, 0.9);
     align-items: center;
     display: none; /* Hidden by default */
     z-index: 99;
@@ -461,10 +465,11 @@ footer a {
   }
 
   .home-content {
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 200px;
+    flex-direction: column;
   }
 
   .home-content h1 {
